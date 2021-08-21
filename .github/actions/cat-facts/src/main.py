@@ -12,7 +12,7 @@ print(random_fact)
 sleep_time = 5
 time.sleep(sleep_time)
 
-print(f"I've just slept for {sleep_time}")
+print(f"I've just slept for {sleep_time} seconds")
 
 # Set the fact-output of the action as the value of random_fact
 print(f"::set-output name=fact::{random_fact}")
