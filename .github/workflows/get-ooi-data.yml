@@ -14,7 +14,7 @@ on:
       end_time:
         description: 'end_time formatted as Y-m-dTH-M-S'
         required: false
-        default: '2021-07-01T00-00-30'
+        default: '2021-07-01T00-30-00'
       segment_length:
         description: 'Segment length in minutes (float)'
         required: false
@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: get-ooi-data
-        uses: orcasound/get-ooi-data
+        uses: orcasound/get-ooi-data@master
         with:
           node: ${{ github.event.inputs.node }}
           start_time: ${{ github.event.inputs.start_time }}
